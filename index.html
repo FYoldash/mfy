@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>Home</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        body {
+            background-color: #121212;
+        }
+    </style>
+</head>
+<body>
+    <header>
+
+        <!-- Navabar-->
+        <nav class="navbar">
+            <h1 class="logo">ScarbScape</h1>
+           <ul class="nav-links">
+            <li class="active"><a href="#"> Home</a></li>
+            <li><a href="explore.html"> Explore</a></li>
+            <li><a href="gallery.html"> Gallery</a></li>
+            <li><a href="About.html">About Us</a></li>
+            <li class="ctn"><a href="contact.html"> Contact</a></li>
+           </ul> 
+           <img src="images/menu-btn.png" alt="" class="menu-btn">
+        </nav>
+        <div class="header-content">
+            <h2>Welcome To <span class="ScarbScape">ScarbScape</span></h2>
+            <div class="line"> </div>
+                <h1>Scarborough</h1>
+                <a href="#" class="ctn">Learn More</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- EVENTS-->
+
+    <section class="events">
+        <div class="title">
+            <h1>Upcoming EVENTS</h1>
+            <div class="line"></div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <a href="https://www.discoveryorkshirecoast.com/scarborough/whats-on/" target="_blank"> <img src="images/statesquo.jpg" alt=""></a>
+                <h4>Status Quo</h4>
+                <h5>June 2, 2024</h5>
+              <p> 📌 Scarborough Open Air Theatre, Burniston Road, Scarborough, YO12 6PF </p>
+                <a href="https://www.discoveryorkshirecoast.com/scarborough/whats-on/" target="_blank" class="ctn">Learn More</a>
+            </div>
+            <div class="col">
+                <a href="https://www.discoveryorkshirecoast.com/scarborough/whats-on/" target="_blank" ">    <img src="images/Burlesque_DYC_677482765.jpeg" alt=""></a>
+                <h4>An Evening of Burlesque</h4>
+                <h5>June 8, 2024</h5>
+                <p>
+                    📌Scarborough Spa, South Bay, Scarborough, YO11 2HD </p>
+                <a href="https://www.discoveryorkshirecoast.com/scarborough/whats-on/" target="_blank" class="ctn">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="explore">
+        
+        <div class="explore-content">
+            <h1></h1>
+           <!--<div class="line"></div>--> 
+            <p> </p>
+           <div class="vid-btn"> <button class="ctn" id="toggleAudioBtn">Unmute</button>
+            <button class="ctn" id="myBtn" onclick="myFunction()">Pause</button>
+            <button class="ctn" id="fullscreenBtn" onclick="toggleFullscreen()">Full Screen</button></div>
+        <video autoplay loop muted playsinline id="bgVideo">
+            <source src="Videos/0424.mp4" type="video/mp4"><span style="color: #e4e4e4;">Your Broswer Does Not Support HTML5 Video</span>
+        </video>
+
+       </div>
+    </section>
+<section class="gallery">
+<div class="gallery-photos">
+    <h1> Photo Gallery</h1>
+<div class="line"></div>
+</div>
+
+<div class="slider">
+    <div class="slides">
+        <img src="images/myimg/1 (7).jpg" draggable="false" alt="Image 1" class="slide">
+        <img src="images/myimg/1 (10).jpg" draggable="false" alt="Image 2" class="slide">
+        <img src="images/myimg/1 (13).jpg" draggable="false" alt="Image 3" class="slide">
+        <img src="images/myimg/1 (5).jpg" draggable="false" alt="Image 1" class="slide">
+        <img src="images/myimg/1 (11).jpg" draggable="false" alt="Image 2" class="slide">
+        <img src="images/myimg/1 (9).jpg" draggable="false" alt="Image 1" class="slide">
+    </div>
+    <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+    <button class="next" onclick="moveSlide(1)">&#10095;</button>
+</div>
+<a href="gallery.html" class="ctn" style="display: block; width: fit-content; margin: auto; ">More...</a>
+</section>
+
+<section>
+    <div class="trip">
+        <h1>Getting Here & Around </h1>
+<div class="line"></div>
+
+
+        <div class="row">
+            <div class="col">
+                <img src="images/train.jpg" draggable="false" alt="">
+                <h4>Transportation</h4>
+                <h5></h5>
+              <p style="padding-bottom: 40px "> 
+                
+                Scarborough is easily accessible with convenient transport links.<br> Regular train services link Scarborough to major cities.</p>
+              <a href="https://uk.trip.com/" target="_blank" class="ctn">Book Your Trains</a>
+            </div>
+            <div class="col">
+                <img src="images/hotels.jpg" alt="" draggable="false">
+        
+                <h4>Accommodations</h4>
+                <h5></h5>
+                <p style="padding-bottom: 40px "> Scarborough offers a variety of accommodations, ranging from charming seaside guesthouses to luxurious hotels, catering to all tastes and budgets.
+                    </p>
+                <a href="https://www.booking.com/city/gb/scarborough-aireborough.html?aid=303948;label=scarborough-aireborough-Q77ZAc3Cu6F3JBKwhQCn7QS392743204751:pl:ta:p1150:p2:ac:ap:neg:fi:tikwd-91498745:lp9046340:li:dec:dm:ppccp=UmFuZG9tSVYkc2RlIyh9Yf5EcukO1MOGLSSAuId8ToA;ws=&gad_source=1&gclid=CjwKCAjwouexBhAuEiwAtW_Zxy8Uz-GOH-BzYD5lITn55Idpukdj8MA92GEGra9LcJs16dJPL3oZ8xoCB_oQAvD_BwE" target="_blank" class="ctn">Book Your Stay</a>
+            </div>
+        </div> 
+    </div>
+</section>
+
+<div class="iframe-container">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22103.77013784668!2d-0.40936628395722063!3d54.281549514413754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487f254b19e38abb%3A0x69546c0179a47ac7!2sScarborough!5e1!3m2!1sen!2suk!4v1715079819731!5m2!1sen!2suk" width="100%" height="700px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+
+<footer>
+    <hr > 
+        <div class="footerNav">
+            <ul><li><a href="index.html">Home</a></li>
+                <li><a href="explore.html">Explore</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+        <section class="footer">
+            <p>Email: ScarbScape123@gmail.com </p>
+            <p>Copyright @2024 All Rights Reserved</p>
+            <p style="letter-spacing: 3px;"><b>MOHAMMAD YOLDASH</b></p>
+        </section>
+       
+    </div>
+</footer>
+
+    <script src="script/script.js"></script>
+    
+</body>
+</html>
